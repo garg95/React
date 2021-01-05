@@ -1,0 +1,28 @@
+1) In this we have created structure in a proper manner like divided folders into components ,containers, assets(for images and videos), cockpit
+2) After react 16 functional based components can also manage state 
+	a) Presentational Component-> this is the component that does not manage state. And it is prefer to have 				      presentational components in your project.
+
+Note : Try to have state in containers only as u will know where is your state .
+
+------------------------------------------------------------------------------------------
+Learned about Lifecycle and UpdateLifecycle and also implemented that
+
+
+--------------------------------------------------------------------------------
+1) useEffect
+2)shouldComponentUpdate
+3) COmponentDidUpdate
+4) componentWillUnmount (when ever we have to do some clean up operation)
+5) React.memo() (for optimization)( wrap functional component with this)
+6) PureComponents (just like shouldComponentUpdate but in this case it checks for all properties of props)
+7) Auxiliary (to create multiple elements in return statement)
+8) React.Fragment (does exactly the same thing like aux component does
+9) Higher order components
+10) withClass
+11) PropTypes Command-> npm install --save prop-types
+12) Refs and useRef(for functional components)
+13) Context
+14) contextType and useContext()
+------------------------------------------------------------------------------------------
+q1) how can you send multiple elements(or JSX) without using div in return statement?
+-> Creating functional component Auxiliary and then from there return props.children and thenwrap it around those multiple elements.

@@ -1,0 +1,50 @@
+1) first install node js
+2) in command prompt run Command-> sudo npm install create-react-app -g  (g means globally anywhere on the system)
+3) go tothe folder where u want to setup your react project and
+	Command -> create-react-app project_name --scripts-version 1.1.5
+4) now go to this newly created folder (name project_name) and run below command
+	Command -> npm start
+-------------------------------------------------------------------------------------------
+* Install radium -> Command -> npm install --save radium
+
+*Install Styled Components -> Command-> npm install --save styled-components
+
+*Install css module -> 1) Command -> npm run eject
+		       2) now in webpack.config.dev file ...under css section add below lines
+				
+
+----------------------------------------------------------------------------------------------
+
+to stop development server 
+press ctrl+C
+
+
+--------------------------------------------------------------------------------------------------
+words used in react
+
+JSX
+attributes
+tags
+stateful (class as it has state )
+stateless ( function without any state)
+css modules
+
+------------------------------------------------------------------------------------------------
+Points to remember :
+
+1) state is something which is stored inside the component. Also if anything is changed in state and then elemnets have to be re rendered.Also ur state can be managed in class based components
+
+2) setState()is a part of component and allows to set a value in state property also it merges with the old values instead of replacing whole part.
+
+3) you can have functions inside another function
+
+4) useState() makes use of array destructuring( first part of array which is used to get value, 2nd part is used to set a value)
+
+5) due to webpack we are able to import css files into javascript
+
+6) when u copy 1 thing into another remember in javascript it is of reference type
+	so to create a copy u can make use of spread operator [...value] or .slice()
+
+7) we can use radium for media queries or pseudo selectors(like :hover feature)
+
+8) Styled-components adds css to head of the document and it does not appear as inline styling when we inspect element on browser. Also styled components are created outside the function and class just like a variable.As styled-component itself returns in the background.Also in this we dont have to use camel case or anything like we used to in javascript styling.
